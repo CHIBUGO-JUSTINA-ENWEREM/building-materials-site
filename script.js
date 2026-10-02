@@ -1,12 +1,13 @@
-// Moving logo strip (replace these names with real brand names later)
-var names = ["Cement Co", "Steel Works", "Roofing Ltd", "Tile House", "Paint Plus", "Pipe Masters", "Timber Hub"];
-document.getElementById("logos").innerHTML = names.concat(names)
+ // Moving brand strip: brands we supply (confirm the final list with the owner later)
+var names = ["Dangote Cement", "UNICEM", "Eagle Cement"];
+var base = names.concat(names, names, names);
+document.getElementById("logos").innerHTML = base.concat(base)
   .map(function (n) { return "<span>" + n + "</span>"; }).join("");
 
 // Moving product slider (replace these with real products later)
 var items = [
-  ["Portland cement", "g"], ["16mm iron rods", "w"], ["Roofing sheets", "c"],
-  ["Floor tiles", "c"], ["Sharp sand", "g"], ["PVC pipes", "w"]
+  ["Portland cement", "g"], ["16mm iron rods", "w"], ["Zinc roofing sheets", "c"],
+  ["Nails", "c"], ["Iron pipes", "g"], ["Steel beams", "w"]
 ];
 document.getElementById("products").innerHTML = items.concat(items)
   .map(function (i) {
